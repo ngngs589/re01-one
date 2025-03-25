@@ -11,11 +11,33 @@
         margin: 20px 0;      /* 添加页面边距 */
     }
     @media print {
-            .keep-color {
-                -webkit-print-color-adjust: exact !important;
-                color-adjust: exact !important;
-            }
+        * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
         }
+        .no-print { display: none; }
+    }
+        .biaoqian {
+        background: #44546B;
+        clip-path: polygon(0% 100%, 100% 100%, 90% 0%, 0% 0%);
+        width: 150px;
+        height: 30px;
+        position: relative;
+        margin: 0;
+    }
+    .henxiang {
+         width: 600px;  /* 调整宽度 */
+         margin: -7px 0 0 150px;        /* 从教育背景右侧开始 */
+         height: 6px;
+         background: #44546B;
+         clip-path: polygon(0.5% 100%, 100% 99%, 99.5% 0%, 0% 0%);
+    }
+    .SJZ {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        margin: 10px 0;
+        padding: 0 20px;
+    }
 
 </style>
 <body>
@@ -86,13 +108,7 @@
         </div>
     </div>
     <div style="padding-top: 20px; position: relative;">  <!-- 新增定位基准 -->
-        <div style="
-         width: 150px;
-         height: 30px;
-         background: #44546B;
-         margin: 0 ;
-         clip-path: polygon(0% 100%, 100% 100%, 90% 0%, 0% 0%);" class="keep-color">
-        </div>
+        <div class="biaoqian"></div>
         <div style="position: absolute; top: 23px; left: 15px; display: flex; ">
             <img src="jiaoyv.svg" style="width: 20px; margin-right: 8px;">
             <p style="color: #ffffff; margin: 0; font-size: 16px;">教育背景</p>
@@ -104,7 +120,7 @@
          background: #44546B;
          clip-path: polygon(0.5% 100%, 100% 99%, 99.5% 0%, 0% 0%);" class="keep-color">  <!-- 调整右侧倾斜度 -->
         </div>
-        <p style="display: grid;  grid-template-columns: 1fr 2fr 1fr; margin: 10px 0; padding: 0 20px;">
+        <p class="SJZ">
         <span style="text-align: left;">2019.9-2022.7</span>
         <span style="text-align: center;">江西信息应用职业技术学院</span>
         <span style="text-align: right;">智能产品开发（专科）</span>
@@ -116,25 +132,14 @@
         </p>
     </div>
     <div style="padding-top: 20px; position: relative;">  <!-- 新增定位基准 -->
-        <div style="
-         width: 150px;
-         height: 30px;
-         background: #44546B;
-         margin: 0 ;
-         clip-path: polygon(0% 100%, 100% 100%, 90% 0%, 0% 0%);" class="keep-color">
+        <div class="biaoqian">
         </div>
         <div style="position: absolute; top: 23px; left: 15px; display: flex;" class="keep-color">
             <img src="gz.svg" style="width: 20px; margin-right: 8px;">
             <p style="color: #ffffff; margin: 0; font-size: 16px;">工作经历</p>
         </div>
-        <div style="
-         width: 600px;  /* 调整宽度 */
-         margin: -7px 0 0 150px;        /* 从教育背景右侧开始 */
-         height: 6px;
-         background: #44546B;
-         clip-path: polygon(0.5% 100%, 100% 99%, 99.5% 0%, 0% 0%);" class="keep-color">  <!-- 调整右侧倾斜度 -->
-        </div>
-        <p style="display: grid;  grid-template-columns: 1fr 2fr 1fr; margin: 10px 0; padding: 0 20px;">
+        <div class="henxiang">  <!-- 调整右侧倾斜度 --></div>
+        <p class="SJZ">
         <span style="text-align: left;">2022.11-2022.12</span>
         <span style="text-align: center;">江西彭彩新材料科技有限公司</span>
         <span style="text-align: right;">分切机操作工</span>
@@ -143,7 +148,7 @@
         <p >
             负责分切机的日常操作和维护。对分切机进行调试和定期检查,以确保其处于良好状态。确保分切的产品质量合格，提高或达到成品率标准。提高设备利用率，认真执行产品工艺标准、设备操作标准、工作标准；按照生产工艺单的标准要求产出合格标准的包装袋耗材。
         </p>
-        <p style="display: grid;  grid-template-columns: 1fr 2fr 1fr; margin: 10px 0; padding: 0 20px;">
+        <p class="SJZ">
          <span style="text-align: left;">2023.2-2024.1 </span>
         <span style="text-align: center;">宁波研森电子科技有限公司</span>
         <span style="text-align: right;">维修工</span>
@@ -154,24 +159,12 @@
         </p>
     </div>
     <div style="padding-top: 20px; position: relative;">  <!-- 新增定位基准 -->
-        <div style="
-         width: 150px;
-         height: 30px;
-         background: #44546B;
-         margin: 0 ;
-         clip-path: polygon(0% 100%, 100% 100%, 90% 0%, 0% 0%);" class="keep-color">
-        </div>
+        <div class="biaoqian"></div>
         <div style="position: absolute; top: 23px; left: 15px; display: flex; " class="keep-color">
             <img src="jn.svg" style="width: 20px; margin-right: 8px;">
             <p style="color: #ffffff; margin: 0; font-size: 16px;">技能证书</p>
         </div>
-        <div style="
-         width: 600px;  /* 调整宽度 */
-         margin: -7px 0 0 150px;        /* 从教育背景右侧开始 */
-         height: 6px;
-         background: #44546B;
-         clip-path: polygon(0.5% 100%, 100% 99%, 99.5% 0%, 0% 0%);" class="keep-color">  <!-- 调整右侧倾斜度 -->
-        </div>
+        <div class="henxiang"> </div>
         <h4 style="margin: 15px 0 -8px 0;">专业技能：</h4>
         <p >
             精通使用photoshop,illustrator掌握web客户端和手机端的设计流程，对颜色有很好的把控能力；
@@ -179,24 +172,12 @@
         </p>
     </div>
     <div style="padding-top: 20px; position: relative;">  <!-- 新增定位基准 -->
-        <div style="
-         width: 150px;
-         height: 30px;
-         background: #44546B;
-         margin: 0 ;
-         clip-path: polygon(0% 100%, 100% 100%, 90% 0%, 0% 0%);" class="keep-color">
-        </div>
+        <div class="biaoqian"></div>
         <div style="position: absolute; top: 23px; left: 15px; display: flex; ">
             <img src="js.svg" style="width: 20px; margin-right: 8px;">
             <p style="color: #ffffff; margin: 0; font-size: 16px;">自我介绍</p>
         </div>
-        <div style="
-         width: 600px;  /* 调整宽度 */
-         margin: -7px 0 0 150px;        /* 从教育背景右侧开始 */
-         height: 6px;
-         background: #44546B;
-         clip-path: polygon(0.5% 100%, 100% 99%, 99.5% 0%, 0% 0%);">  <!-- 调整右侧倾斜度 -->
-        </div>
+        <div class="henxiang""></div>
         <p>
            工作积极认真，细心负责，熟练运用办公自动化软件，善于在工作中提出问题，发现问题、解决问题，有较强的分析能力；勤奋好学，踏实肯干，认真负责；坚毅不拔，吃苦耐劳，喜欢和善于迎接新挑战。
         </p>
@@ -210,6 +191,7 @@
     </div>
     <hr style="background: #44546B; height: 10px; border: none; margin-top: 0px;">
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <div style="display: flex; gap: 20px; justify-content: center; margin: 20px 0;">
         <button onclick="generatePDF()" style="
             background: #44546B;
@@ -230,37 +212,34 @@
             直接打印
         </button>
     </div>
-    
-    <!-- 在head中添加jsPDF库 -->
     <script>
         async function generatePDF() {
-            try {
-                const { jsPDF } = window.jspdf;
-                const doc = new jsPDF({
-                    orientation: 'portrait',
-                    unit: 'mm',
-                    format: 'a4'
-                });
-    
-                // 添加等待时间确保内容加载
-                await doc.html(document.body, {
-                    margin: [10, 10, 10, 10],
-                    autoPaging: 'text',
-                    x: 0,
-                    y: 0,
-                    width: 210,
-                    windowWidth: 750,
-                    html2canvas: {
-                        scale: 0.5,  // 添加缩放比例
-                        useCORS: true  // 允许跨域图片
-                    }
-                });
-    
-                doc.save('我的简历.pdf');
-            } catch (error) {
-                alert('生成失败: ' + error.message);
-            }
+        try {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF({
+                orientation: 'portrait',
+                unit: 'mm',
+                format: [210, 297] // A4尺寸
+            });
+
+            await doc.html(document.body, {
+                margin: [10, 10, 10, 10],
+                autoPaging: 'text',
+                width: 210,
+                windowWidth: 750,
+                html2canvas: {
+                    scale: 0.75,
+                    useCORS: true,
+                    logging: true,
+                    ignoreElements: (el) => el.classList.contains('no-print')
+                }
+            });
+            
+            doc.save('我的简历.pdf');
+        } catch (error) {
+            alert('生成失败: ' + error.message);
         }
+    }
     </script>
 </body>
 </html>
